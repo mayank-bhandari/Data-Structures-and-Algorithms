@@ -12,7 +12,7 @@ void display(int A[], int my_size){
 }
 
 // max_heapify the heap
-// my_size - size of the heap remaining
+// my_size - size of the heap
 void max_heapify(int A[], int ind, int my_size){
 
 	// if leaf node, no need to go down further
@@ -20,7 +20,7 @@ void max_heapify(int A[], int ind, int my_size){
 		return;
 	}
 
-	//assume left child is greater
+	//assume left child is greater one
 	int aux_ind = ind*2, aux_val = A[ind*2];
 
 	//if right child exists and is greater, then update
@@ -72,7 +72,7 @@ void initialize_array(int A[], int my_size){
 
 int main(){
 	int A[31] = {0};
-	int my_size = 10;
+	int my_size = 30;
 
 	initialize_array(A, 30);
 
