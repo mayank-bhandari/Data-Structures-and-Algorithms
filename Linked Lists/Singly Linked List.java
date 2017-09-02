@@ -1,28 +1,22 @@
-/*
-Linked list ADT
-Mayank Bhandari, 09/01/2017
-*/
-import java.util.Random;
+class Node{
+	public int data;
+	public Node next = null;	
+	//constructors
+	public Node(){
+		data = 0;
+		next = null;
+	}
+	public Node(int val){
+		data = val;
+		next = null;
+	}
+	public Node(int val, Node next){
+		data = val;
+		this.next = next;
+	}
+}
 
 class SingleLinkedList{
-	//inner class
-	class Node{
-		int data;
-		Node next = null;	
-		//constructors
-		public Node(){
-			data = 0;
-			next = null;
-		}
-		public Node(int val){
-			data = val;
-			next = null;
-		}
-		public Node(int val, Node next){
-			data = val;
-			this.next = next;
-		}
-	}
 
 	//head and tail of linked list
 	Node head, last;
@@ -106,25 +100,12 @@ class SingleLinkedList{
 
 	//display the list
 	public void display(){
+		System.out.print("List is : ");
 		Node temp = head;
 		while(temp!=null){
 			System.out.print(temp.data + " ");
 			temp = temp.next;
 		}
 		System.out.println();
-	}
-}
-
-class SingleLinkedListDriver{
-	public static void main(String ...args){
-		/*
-		SingleLinkedList my_list = new SingleLinkedList();
-		Random rand = new Random();
-		for(int i = 0; i<10;i++){
-			my_list.insertAtLast(rand.nextInt()%100000007);
-			my_list.display();	
-		}
-		*/
-		//Do your stuff here
 	}
 }
