@@ -1,19 +1,18 @@
 import java.utils.Random;
 
-class DoublyLinkedList{
-
-	class DLLNode{
-		int data;
-		DLLNode prev, next;
-
-		//constructor, node is generally initiated with a val
-		DLLNode(int val){
-			data = val;
-			prev = null;
-			next = null;
-		}
-
+class DLLNode{
+	public int data;
+	public DLLNode prev, next;
+	//constructor, node is generally initiated with a val
+	public DLLNode(int val){
+		data = val;
+		prev = null;
+		next = null;
 	}
+
+}
+
+class DoublyLinkedList{
 
 	//head points to first element, last points to the last element
 	DLLNode head, last;
