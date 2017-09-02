@@ -189,7 +189,7 @@ class Driver{
 		my_list.display();
 		//no cycle created till now
 		System.out.println("Cycle exists : " + my_list.isCycle());
-		
+		//creating cycle
 		my_list.create_cycle(size);
 		System.out.println("Cycle exists : " + my_list.isCycle());
 
