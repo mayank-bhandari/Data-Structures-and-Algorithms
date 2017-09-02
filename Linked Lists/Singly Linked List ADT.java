@@ -117,13 +117,14 @@ class SingleLinkedList{
 
 class SingleLinkedListDriver{
 	public static void main(String ...args){
+		/*
 		SingleLinkedList my_list = new SingleLinkedList();
 		Random rand = new Random();
 		for(int i = 0; i<10;i++){
 			my_list.insertAtLast(rand.nextInt()%100000007);
 			my_list.display();	
 		}
-
+		*/
 		//Do your stuff here
 	}
 }
