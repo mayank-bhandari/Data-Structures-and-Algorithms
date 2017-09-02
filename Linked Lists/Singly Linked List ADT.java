@@ -115,7 +115,7 @@ class SingleLinkedList{
 	}
 }
 
-class Driver{
+class SingleLinkedListDriver{
 	public static void main(String ...args){
 		SingleLinkedList my_list = new SingleLinkedList();
 		Random rand = new Random();
